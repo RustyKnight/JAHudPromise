@@ -82,3 +82,4 @@ fastlane/builds
 *.cer
 devices.txt
 /JAHudHydra.framework.zip
+/JAHudPromise.framework.zip
