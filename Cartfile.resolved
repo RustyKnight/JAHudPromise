@@ -1,3 +1,3 @@
-binary "https://www.kiazenenterprises.org:8443/json/12.0b12A7209/JAHud" "0.2.0"
-binary "https://www.kiazenenterprises.org:8443/json/12.0b12A7209/PureLayout" "3.1.5"
+binary "https://www.kiazenenterprises.org:8443/json/12.3b12C33/JAHud" "0.2.0"
+binary "https://www.kiazenenterprises.org:8443/json/12.3b12C33/PureLayout" "3.1.5"
 github "mxcl/PromiseKit" "6.13.3"
