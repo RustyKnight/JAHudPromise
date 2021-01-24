@@ -14,7 +14,6 @@
 		18ACC3B0252C6FFD0070B514 /* Promise+FailureHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC3AB252C6FFD0070B514 /* Promise+FailureHud.swift */; };
 		18ACC3B1252C6FFD0070B514 /* Promise+Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC3AC252C6FFD0070B514 /* Promise+Hud.swift */; };
 		18ACC3B2252C6FFD0070B514 /* Promise+SuccessHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC3AD252C6FFD0070B514 /* Promise+SuccessHud.swift */; };
-		18ACC3B6252C70F00070B514 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ACC3A5252C6FC50070B514 /* PromiseKit.framework */; platformFilter = ios; };
 		18ACC3BB252C70F00070B514 /* JAHud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ACC3B9252C70F00070B514 /* JAHud.framework */; platformFilter = ios; };
 		18ACC3BD252C70F00070B514 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ACC3BA252C70F00070B514 /* PureLayout.framework */; platformFilter = ios; };
 		18ACC3C1252C7E2C0070B514 /* Promise+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC3C0252C7E2C0070B514 /* Promise+Helper.swift */; };
@@ -43,7 +42,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				18ACC3A6252C6FC50070B514 /* PromiseKit.framework in Frameworks */,
-				18ACC3B6252C70F00070B514 /* PromiseKit.framework in Frameworks */,
 				18ACC3BD252C70F00070B514 /* PureLayout.framework in Frameworks */,
 				18ACC3BB252C70F00070B514 /* JAHud.framework in Frameworks */,
 			);
@@ -133,7 +131,7 @@
 		18ACC38F252C6F390070B514 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					18ACC397252C6F390070B514 = {
 						CreatedOnToolsVersion = 12.0.1;
@@ -239,7 +237,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -297,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
