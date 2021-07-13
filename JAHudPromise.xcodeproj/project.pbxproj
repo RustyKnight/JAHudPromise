@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18097E7D2684143700096F31 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18097E7A2684143700096F31 /* PureLayout.framework */; };
+		18097E7F2684143700096F31 /* JAHud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18097E7B2684143700096F31 /* JAHud.framework */; };
+		18097E812684143700096F31 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18097E7C2684143700096F31 /* PromiseKit.framework */; };
 		18ACC39D252C6F390070B514 /* JAHudPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ACC39B252C6F390070B514 /* JAHudPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18ACC3AE252C6FFD0070B514 /* Promise+WaitHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC3A9252C6FFD0070B514 /* Promise+WaitHud.swift */; };
 		18ACC3AF252C6FFD0070B514 /* Promise+ProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC3AA252C6FFD0070B514 /* Promise+ProgressHud.swift */; };
@@ -15,31 +18,12 @@
 		18ACC3B2252C6FFD0070B514 /* Promise+SuccessHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC3AD252C6FFD0070B514 /* Promise+SuccessHud.swift */; };
 		18ACC3C1252C7E2C0070B514 /* Promise+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC3C0252C7E2C0070B514 /* Promise+Helper.swift */; };
 		18ACC3C4252C7E5F0070B514 /* DispatchQueue+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC3C3252C7E5F0070B514 /* DispatchQueue+Helpers.swift */; };
-		18ED9DFF266F7F2D00FD149C /* PureLayout.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ED9DFC266F7F2D00FD149C /* PureLayout.xcframework */; };
-		18ED9E00266F7F2D00FD149C /* PureLayout.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18ED9DFC266F7F2D00FD149C /* PureLayout.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		18ED9E01266F7F2D00FD149C /* JAHud.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ED9DFD266F7F2D00FD149C /* JAHud.xcframework */; };
-		18ED9E02266F7F2D00FD149C /* JAHud.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18ED9DFD266F7F2D00FD149C /* JAHud.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		18ED9E03266F7F2D00FD149C /* PromiseKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ED9DFE266F7F2D00FD149C /* PromiseKit.xcframework */; };
-		18ED9E04266F7F2D00FD149C /* PromiseKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18ED9DFE266F7F2D00FD149C /* PromiseKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		18ED9E05266F7F2D00FD149C /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				18ED9E02266F7F2D00FD149C /* JAHud.xcframework in Embed Frameworks */,
-				18ED9E00266F7F2D00FD149C /* PureLayout.xcframework in Embed Frameworks */,
-				18ED9E04266F7F2D00FD149C /* PromiseKit.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		18097E7A2684143700096F31 /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = Carthage/Build/iOS/PureLayout.framework; sourceTree = "<group>"; };
+		18097E7B2684143700096F31 /* JAHud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JAHud.framework; path = Carthage/Build/iOS/JAHud.framework; sourceTree = "<group>"; };
+		18097E7C2684143700096F31 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
 		18ACC398252C6F390070B514 /* JAHudPromise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JAHudPromise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18ACC39B252C6F390070B514 /* JAHudPromise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAHudPromise.h; sourceTree = "<group>"; };
 		18ACC39C252C6F390070B514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,9 +34,6 @@
 		18ACC3AD252C6FFD0070B514 /* Promise+SuccessHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+SuccessHud.swift"; sourceTree = "<group>"; };
 		18ACC3C0252C7E2C0070B514 /* Promise+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+Helper.swift"; sourceTree = "<group>"; };
 		18ACC3C3252C7E5F0070B514 /* DispatchQueue+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Helpers.swift"; sourceTree = "<group>"; };
-		18ED9DFC266F7F2D00FD149C /* PureLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PureLayout.xcframework; path = Carthage/Build/PureLayout.xcframework; sourceTree = "<group>"; };
-		18ED9DFD266F7F2D00FD149C /* JAHud.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = JAHud.xcframework; path = Carthage/Build/JAHud.xcframework; sourceTree = "<group>"; };
-		18ED9DFE266F7F2D00FD149C /* PromiseKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PromiseKit.xcframework; path = Carthage/Build/PromiseKit.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +41,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18ED9E01266F7F2D00FD149C /* JAHud.xcframework in Frameworks */,
-				18ED9DFF266F7F2D00FD149C /* PureLayout.xcframework in Frameworks */,
-				18ED9E03266F7F2D00FD149C /* PromiseKit.xcframework in Frameworks */,
+				18097E812684143700096F31 /* PromiseKit.framework in Frameworks */,
+				18097E7D2684143700096F31 /* PureLayout.framework in Frameworks */,
+				18097E7F2684143700096F31 /* JAHud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,9 +86,9 @@
 		18ACC3A4252C6FC50070B514 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				18ED9DFD266F7F2D00FD149C /* JAHud.xcframework */,
-				18ED9DFE266F7F2D00FD149C /* PromiseKit.xcframework */,
-				18ED9DFC266F7F2D00FD149C /* PureLayout.xcframework */,
+				18097E7B2684143700096F31 /* JAHud.framework */,
+				18097E7C2684143700096F31 /* PromiseKit.framework */,
+				18097E7A2684143700096F31 /* PureLayout.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,7 +115,6 @@
 				18ACC394252C6F390070B514 /* Sources */,
 				18ACC395252C6F390070B514 /* Frameworks */,
 				18ACC396252C6F390070B514 /* Resources */,
-				18ED9E05266F7F2D00FD149C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
