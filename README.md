@@ -34,35 +34,37 @@ Hud.presentProgress(on: self, progress: progress, title: "All your base are belo
 And turns it into something more like...
 
 ~~~
-Hud.asyncPresentProgress(on: self,
-						 progress: progress,
-						 title: "All your work are belong to us",
-						 text: "Please wait...",
-						 configuration: config)
-	.then(on: .userInitiated) { () -> Promise<Int> in
-		while self.progress.fractionCompleted < 1.0 {
-			Thread.sleep(forTimeInterval: 1.0)
-			let amount = 10
-			let value = min(100, self.progress.completedUnitCount + Int64(amount))
-			self.progress.completedUnitCount += value
-		}
+Hud.asyncPresentProgress(
+	on: self,
+	progress: progress,
+	title: "All your work are belong to us",
+	text: "Please wait...",
+	configuration: config
+)
+.then(on: .userInitiated) { () -> Promise<Int> in
+	while self.progress.fractionCompleted < 1.0 {
 		Thread.sleep(forTimeInterval: 1.0)
-		guard fail else {
-			let value = Int.random(in: 1...1000)
-			print("Then pass \(value)")
-			return .value(value)
-		}
-		throw "Something wicked this way did come"
-	}.thenPresentSuccessHud(on: self)
-	.thenDismissHud(from: self)
-	.then { (value) -> Promise<Void> in
-		print("Success \(value)")
-		return .asVoid()
-	}.done { () in
-		self.performSegue(withIdentifier: "After", sender: self)
-	}.catch(on: .main) { (error) in
-		Hud.asyncPresentFailure(on: self).thenDismissHud(from: self)
+		let amount = 10
+		let value = min(100, self.progress.completedUnitCount + Int64(amount))
+		self.progress.completedUnitCount += value
 	}
+	Thread.sleep(forTimeInterval: 1.0)
+	guard fail else {
+		let value = Int.random(in: 1...1000)
+		print("Then pass \(value)")
+		return .value(value)
+	}
+	throw "Something wicked this way did come"
+}.thenPresentSuccessHud(on: self)
+.thenDismissHud(from: self)
+.then { (value) -> Promise<Void> in
+	print("Success \(value)")
+	return .asVoid()
+}.done { () in
+	self.performSegue(withIdentifier: "After", sender: self)
+}.catch(on: .main) { (error) in
+	Hud.asyncPresentFailure(on: self).thenDismissHud(from: self)
+}
 ~~~
 
 # JAHud
@@ -108,4 +110,4 @@ Hud.presentProgress(on: self, progress: progress, title: "All your base are belo
 
 Basically these are called AFTER the animation effects have completed, meaning you don't need to try and "guess" when the Hud's animation has completed, especially helpful when switch states
 
-The API also provides both global and instance configuration support, allowing for an adaptable solution, because there's always that one screen that just wants to be different 🙄
+The API also provides both global and instance configuration support, allowing for an adaptable solution, because there's always that one screen that just wants to be different
